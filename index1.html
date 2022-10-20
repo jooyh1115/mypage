@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="데잇데잇 - 프로필 링크" />
+        <meta property="og:description" content="코딩과 투자를 배우고 있습니다" />
+        <meta property="og:image" content="불꽃.jpg" />
+        <title>르탄이 - 프로필 링크</title>
+        <style>
+            /* 폰트넣기 */
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+               background-color: #44398A; /* 배경색 설정 */
+            }
+            .profile {
+                width: 100px;
+                height: 100px;
+
+                border-radius: 100%;
+
+                border: 2px solid white;
+
+                background-image: url('불꽃.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+            .main {
+                color : white;
+                font-size:20px;                 
+
+                /* 글자 간격 주기 */
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub {
+                color : white;
+                font-size:14px;    
+                
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .wrap {
+                /* background-color: green; /* wrap 구역을 인식하기 위해 임시로 색을 지정, 다 한 뒤엔 지우기 */
+                width: 300px; 
+                
+                /* 가운데 여백주기, 가운데로  */
+                margin: 30px auto 0px auto ; /* 위,오른쪽 순 */
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .wrap > a {
+                width : 300px ; 
+                height: 50px;                       
+                
+                background-color: white;
+                border-radius: 8px;
+                
+                margin-bottom : 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: #44398A;
+
+                /* 내용물을 가운데로 오게 하는 네 줄 */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none; /* 하이퍼링크의 밑줄을 없애주기 */
+
+                box-shadow : 3px 3px 5px 0px black ; /* '오른쪽', '밑으로' 가는 길이, '꼬리길이', '꼬리 선명도', 색상  */
+            }
+            .wrap > a:hover { /* 마우스가 a div에 갔을 때 색이 변하게 하는 코드 */
+                background-color: #f2f2f2;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap"> <!-- 옮기려는 영역을 wrap 이라는 구역으로 설정 -->
+            <div class="profile"></div> <!-- 구역 설정 -->
+            <h1 class="main">데잇데잇</h1>
+            <p class="sub">코딩과 투자를 배우고 있습니다</p>
+            <a target="_blank" href="https://ddate.tistory.com/m">데이타데이트 블로그</a>
+            <a target="_blank" href="https://spartacodingclub.kr/">스파르타 코딩클럽</a>
+            <a target="_blank" href="https://www.google.com/finance/">금융 정보는 구글 파이낸스로..</a>
+            <a target="_blank" href="https://teamsparta.notion.site/58f29a084f2548109fff12acc728b016">더 많은 프로필 템플릿</a>
+            
+        </div>
+        
+    </body>
+</html>
